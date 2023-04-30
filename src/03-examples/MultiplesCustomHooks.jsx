@@ -30,7 +30,12 @@ export const MultiplesCustomHooks = () => {
         )
       }
 
-      <button className="btn btn-primary" onClick={() => increment(1)}>Next quote</button>
+      <button
+        className="btn btn-primary"
+        onClick={() => increment(1)}
+        disabled={isLoading}>
+        Next quote
+      </button>
     </>
   )
 }
