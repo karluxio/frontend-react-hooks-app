@@ -1,16 +1,5 @@
 
-export const initialState = [
-  // {
-  //   id: new Date().getTime(),
-  //   description: 'Recollect soul gem',
-  //   done: false
-  // },
-  // {
-  //   id: new Date().getTime() + 100,
-  //   description: 'Recollect power gem',
-  //   done: true
-  // }
-]
+export const initialState = []
 
 export const todosReducer = (state = initialState, { type, payload }) => {
   switch (type) {
