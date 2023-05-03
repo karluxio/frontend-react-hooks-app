@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiplesCustomHooks should match against snapshot 1`] = `
+<div>
+  <h1>
+    BreakingBad quotes
+  </h1>
+  <hr />
+  <div
+    class="alert alert-info text-center"
+  >
+    Loading...
+  </div>
+  <button
+    class="btn btn-primary"
+    disabled=""
+  >
+    Next to quote 
+    2
+  </button>
+</div>
+`;
