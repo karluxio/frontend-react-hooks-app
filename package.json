@@ -9,7 +9,7 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test:dependencies": "pnpm i -D jest babel-jest @babel/preset-env @babel/preset-react @testing-library/react @types/jest jest-environment-jsdom whatwg-fetch",
-    "test:create:files": "touch babel.config.cjs jest.config.cjs jest.setup.js && echo '// snippet --> config-babel' > babel.config.cjs && echo '// snippet --> config-jest' > jest.config.cjs && echo '// snippet --> config-jest-setup' > jest.setup.js ",
+    "test:create:files": "touch babel.config.cjs jest.config.cjs jest.setup.js && echo '// snippet --> config-babel' > babel.config.cjs && echo '// snippet --> config-jest' > jest.config.cjs ",
     "config:test": "pnpm test:dependencies && pnpm test:create:files",
     "test": "jest --watchAll"
   },
