@@ -1,7 +1,7 @@
 
 export const initialState = []
 
-export const todosReducer = (state = initialState, { type, payload }) => {
+export const todoReducer = (state = initialState, { type, payload }) => {
   switch (type) {
 
     case '[TODO] add':
