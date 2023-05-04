@@ -21,16 +21,14 @@ describe("TodoApp", () => {
   const handleNewTodoMock = jest.fn()
   const handleDeleteTodoMock = jest.fn()
   const handleToggleTodoMock = jest.fn()
-  const todosCountMock = jest.fn(() => todos.length)
-  const pendingTodosCountMock = jest.fn(() => todos.filter(todo => todo.done !== true).length)
 
   useTodo.mockReturnValue({
     todos,
     handleNewTodoMock,
     handleDeleteTodoMock,
     handleToggleTodoMock,
-    todosCount: todosCountMock,
-    pendingTodosCount: pendingTodosCountMock
+    todosCount: 1,
+    pendingTodosCount: 1
   })
 
   it("should match against snapshot", () => {
@@ -41,9 +39,9 @@ describe("TodoApp", () => {
   it("should render amount and pending todos in title", () => {
     render(<TodoApp />)
 
-    expect(screen.getByRole("heading", { level: 1 }).innerHTML).toContain(`TodoApp: ${todos.length}`)
+    expect(screen.getByRole("heading", { level: 1 }).innerHTML).toContain('TodoApp: 1')
     expect(screen.getByRole("heading", { level: 1 }).innerHTML).toContain(
-      `pending: ${todos.filter(todo => todo.done !== true).length}`
+      'pending: 1'
     )
     // screen.debug()
   })

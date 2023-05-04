@@ -26,16 +26,12 @@ export const useTodo = () => {
     dispatch({ type: '[TODO] toggle', payload: id })
   }
 
-  const todosCount = () => todos.length
-
-  const pendingTodosCount = () => todos.filter(todo => todo.done === false).length
-
   return {
     todos,
     handleNewTodo,
     handleDeleteTodo,
     handleToggleTodo,
-    todosCount,
-    pendingTodosCount
+    todosCount: todos.length,
+    pendingTodosCount: todos.filter(todo => todo.done === false).length
   }
 }
