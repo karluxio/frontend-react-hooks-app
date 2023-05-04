@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage should match against snapshot 1`] = `
+<div>
+  <h1>
+    Login Page
+  </h1>
+  <hr />
+  <pre
+    aria-label="pre"
+  />
+  <button
+    class="btn btn-primary"
+  >
+    login
+  </button>
+</div>
+`;
