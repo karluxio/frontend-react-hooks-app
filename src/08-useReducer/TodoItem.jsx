@@ -15,6 +15,6 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
         delete
       </button>
 
-    </li >
+    </li>
   )
 }

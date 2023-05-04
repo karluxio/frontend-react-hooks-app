@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoItem should match against snapshot 1`] = `
+<div>
+  <li
+    class="d-flex justify-content-between list-group-item"
+  >
+    <span
+      class="align-self-center text-decoration-none"
+    >
+      some description
+    </span>
+    <button
+      class="btn btn-danger"
+    >
+      delete
+    </button>
+  </li>
+</div>
+`;
